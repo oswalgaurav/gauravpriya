@@ -530,6 +530,11 @@ mark,
   height: auto;
 }
 
+.event-image {
+  width: 300px;
+  height: 200px !important;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #FFFFFF;
