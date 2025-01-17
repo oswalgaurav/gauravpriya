@@ -138,6 +138,18 @@
         document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
         document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
         document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+        document.getElementById("days-1").innerHTML = days.toString().padStart(2, '0');
+        document.getElementById("hours-1").innerHTML = hours.toString().padStart(2, '0');
+        document.getElementById("minutes-1").innerHTML = minutes.toString().padStart(2, '0');
+        document.getElementById("seconds-1").innerHTML = seconds.toString().padStart(2, '0');
+        document.getElementById("days-2").innerHTML = days.toString().padStart(2, '0');
+        document.getElementById("hours-2").innerHTML = hours.toString().padStart(2, '0');
+        document.getElementById("minutes-2").innerHTML = minutes.toString().padStart(2, '0');
+        document.getElementById("seconds-2").innerHTML = seconds.toString().padStart(2, '0');
+        document.getElementById("days-3").innerHTML = days.toString().padStart(2, '0');
+        document.getElementById("hours-3").innerHTML = hours.toString().padStart(2, '0');
+        document.getElementById("minutes-3").innerHTML = minutes.toString().padStart(2, '0');
+        document.getElementById("seconds-3").innerHTML = seconds.toString().padStart(2, '0');
 
         // If the countdown is finished, write some text
         if (distance < 0) {
@@ -146,6 +158,18 @@
             document.getElementById("hours").innerHTML = "00";
             document.getElementById("minutes").innerHTML = "00";
             document.getElementById("seconds").innerHTML = "00";
+            document.getElementById("days-1").innerHTML = "00";
+            document.getElementById("hours-1").innerHTML = "00";
+            document.getElementById("minutes-1").innerHTML = "00";
+            document.getElementById("seconds-1").innerHTML = "00";
+            document.getElementById("days-2").innerHTML = "00";
+            document.getElementById("hours-2").innerHTML = "00";
+            document.getElementById("minutes-2").innerHTML = "00";
+            document.getElementById("seconds-2").innerHTML = "00";
+            document.getElementById("days-3").innerHTML = "00";
+            document.getElementById("hours-3").innerHTML = "00";
+            document.getElementById("minutes-3").innerHTML = "00";
+            document.getElementById("seconds-3").innerHTML = "00";
         }
     }, 1000);
 
