@@ -173,6 +173,20 @@
         }
     }, 1000);
 
+    // Select the video element
+    const video = document.getElementById('myVideo');
+
+    // Add an event listener for double-click to toggle fullscreen
+    video.addEventListener('dblclick', () => {
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.webkitRequestFullscreen) { // For Safari
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) { // For IE/Edge
+            video.msRequestFullscreen();
+        }
+    });
+
     AOS.init();
 })(jQuery);
 
