@@ -9766,6 +9766,7 @@ a.text-dark:hover, a.text-dark:focus {
 .my-timeline {
   display: flex;
   justify-content: right;
+  z-index: 100;
 }
 
 .timeline-left {
