@@ -116,7 +116,7 @@
     });
 
     // Set the date we're counting down to (1 month from now)
-    const countDownDate = new Date("February 1, 2025 06:00:00");
+    const countDownDate = new Date("February 2, 2025 18:00:00");
 
     // Update the countdown every 1 second
     const x = setInterval(function () {
