@@ -38,6 +38,16 @@
 
         $('#videoModal').on('shown.bs.modal', function (e) {
             $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+            const video = document.getElementById('myVideo');
+
+            // Add an event listener for double-click to toggle fullscreen
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.webkitRequestFullscreen) { // For Safari
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) { // For IE/Edge
+                video.msRequestFullscreen();
+            }
         })
 
         $('#videoModal').on('hide.bs.modal', function (e) {
@@ -172,20 +182,6 @@
             document.getElementById("seconds-3").innerHTML = "00";
         }
     }, 1000);
-
-    // Select the video element
-    const video = document.getElementById('myVideo');
-
-    // Add an event listener for double-click to toggle fullscreen
-    video.addEventListener('dblclick', () => {
-        if (video.requestFullscreen) {
-            video.requestFullscreen();
-        } else if (video.webkitRequestFullscreen) { // For Safari
-            video.webkitRequestFullscreen();
-        } else if (video.msRequestFullscreen) { // For IE/Edge
-            video.msRequestFullscreen();
-        }
-    });
 
     AOS.init();
 })(jQuery);
