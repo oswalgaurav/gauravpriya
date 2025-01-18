@@ -4012,6 +4012,7 @@ input[type="button"].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  z-index:10000;
 }
 
 .navbar .container,
@@ -9762,8 +9763,74 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 30px;
 }
 
+.my-timeline {
+  display: flex;
+  justify-content: right;
+}
+
+.timeline-left {
+  display: flex;
+}
+
+.my-timeline .text-center {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+.timeline-left .text-center {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 400px;
+
+}
+
+.my-timeline:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  right: -9px;
+  top: 30px;
+  background: #fff;
+  border: 2px solid #E47A2E !important;
+}
+
 @media (max-width: 767.98px) {
+  .my-timeline {
+    margin-left: 20px;
+    display: unset;
+    justify-content: unset;
+  }
+  .my-timeline .text-center {
+    text-align: left !important;
+  }
+  .my-timeline:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 30px;
+    background: #fff;
+    border: 2px solid #E47A2E !important;
+    z-index:1000;
+  }
   #event .border-right {
     border-right: none !important;
+    border-left: 2px solid #E47A2E !important;
+  }
+
+  .timeline-left {
+    display: unset;
+    margin-left: 20px;
+    border-left: 2px solid #E47A2E !important;
+  }
+  .timeline-left .text-center {
+    text-align: left !important;
   }
 }

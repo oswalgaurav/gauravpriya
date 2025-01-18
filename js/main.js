@@ -1,6 +1,8 @@
 (function ($) {
     "use strict";
 
+    AOS.init();
+
     // Navbar on scrolling
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
