@@ -50,6 +50,10 @@
             }
         })
 
+        $('.video-button').on('click', function () {
+            window.open("https://youtube.com/shorts/mcnx9SNDL8M?si=6wGB-0-zjxImWhGO")
+        })
+
         $('#videoModal').on('hide.bs.modal', function (e) {
             $("#video").attr('src', $videoSrc);
         })
